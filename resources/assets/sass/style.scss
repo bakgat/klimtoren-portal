@@ -1,0 +1,67 @@
+/*
+Theme Name: Progressive
+Theme URI: http://template.progressive.itembridge.com/
+Author: InfoStyle
+Author URI: http://themeforest.net/user/InfoStyle
+Description: Progressive responsive theme
+Version: 3.0.1
+License: ThemeForest Regular & Extended License
+License URI: http://themeforest.net/licenses/regular_extended
+*/
+
+@charset "utf-8.less";
+
+//Variables
+@import "theme-variables.less";
+
+@import "typography.less";
+@import "helper-classes.less";
+@import "top-bar.less";
+@import "header.less";
+@import "breadcrumb.less";
+@import "main.less";
+@import "carousels.less";
+@import "sliders.less";
+@import "rsslider.less";
+@import "sidebar.less";
+@import "shop.less";
+@import "icons.less";
+@import "media.less";
+@import "blog.less";
+@import "footer.less";
+@import "fancybox.less";
+@import "boxed.less";
+@import "one-page.less";
+@import "other.less";
+@import "custom.less";
+
+@import "elements/banner-set.less";
+@import "elements/blur-pages.less";
+@import "elements/charts.less";
+@import "elements/clients.less";
+@import "elements/contact-us-page.less";
+@import "elements/content-block.less";
+@import "elements/features.less";
+@import "elements/frames.less";
+@import "elements/full-width-box.less";
+@import "elements/galleries.less";
+@import "elements/latest-posts.less";
+@import "elements/login-page.less";
+@import "elements/manufactures.less";
+@import "elements/news.less";
+@import "elements/packages.less";
+@import "elements/page-404.less";
+@import "elements/pricings.less";
+@import "elements/respond.less";
+@import "elements/search-result.less";
+@import "elements/services.less";
+@import "elements/sitemap.less";
+@import "elements/social-feed.less";
+@import "elements/steps.less";
+@import "elements/team.less";
+@import "elements/timeline.less";
+@import "elements/why-choose.less";
+@import "elements/word-rotate.less";
+@import "elements/works.less";
+
+@import "responsive.less";

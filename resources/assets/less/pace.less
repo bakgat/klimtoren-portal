@@ -1,0 +1,38 @@
+/* PACE */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #FF5304;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 1px 1px 1px rgba(50, 50, 50, .2);
+}
+.pace-running .page-box {
+  //.opacity(.2);
+}
+.pace-inactive {
+  display: none;
+}
+
+.pace-done .nav-header {
+  transition:all 0.5s;
+}
+.pace-done .navbar-static-side, .pace-done .nav-header, .pace-done li.active, .pace-done .page-box, .pace-done .footer {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}

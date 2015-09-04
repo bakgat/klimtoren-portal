@@ -1,0 +1,32 @@
+<header class="page-header animated fadeInDown">
+    <div class="container">
+        <h1 class="title">Nieuwsbrieven</h1>
+    </div>
+</header>
+
+<div class="container animated fadeInUp">
+    <div class="row bottom-padding">
+
+        <div class="well">
+            <p>Elke maand sturen wij per mail een nieuwsbrief rond. U kan zich
+                <a href="http://eepurl.com/bxI1Aj" target="_blank">hier inschrijven</a>.
+            </p>
+
+            <p>Wilt u de nieuwsbrieven lezen die u hebt gemist? Hieronder vindt u ons archief.</p>
+        </div>
+
+        <article class="post col-sm-12 col-md-4" data-ng-repeat="campaign in vm.campaigns">
+            <h2 class="entry-title"><a data-ng-href="{{campaign.archive_url}}" target="_blank"
+                                       data-ng-bind="campaign.settings.subject_line"></a></h2>
+
+            <footer class="entry-meta">
+                gepost door <a class="autor-name" data-ng-href="mailto:{{campaign.settings.reply_to}}"
+                               data-ng-bind="campaign.settings.from_name"></a>
+                <br/>
+                <span class="time">gepubliceerd op {{campaign.create_time | date : 'dd.MM.yyyy'}}</span>
+
+            </footer>
+        </article>
+        <!-- .post -->
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="breadcrumb-box" data-ng-hide="$state.current.name === 'index.dashboard'">
+    <div class="container">
+        <div ncy-breadcrumb></div>
+    </div>
+</div>
+<!-- .breadcrumb-box -->
+
+<div ui-view="slider"></div>
+
+<div class="clearfix"></div>
+
+<div ui-view="banner-set"></div>
+
+<div class="clearfix"></div>
+
+
+<section id="main">
+
+    <article class="content" ui-view="content">
+
+    </article>
+</section>

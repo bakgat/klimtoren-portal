@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Portal
+        psr4_prefix: Portal
+        src_path: app

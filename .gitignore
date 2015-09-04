@@ -1,0 +1,15 @@
+# Laravel
+/vendor
+/bootstrap/compiled.php
+/node_modules
+/workbench
+.env
+
+# Composer
+composer.phar
+composer.lock
+
+# OS
+.DS_Store
+.idea/
+.travis.yml

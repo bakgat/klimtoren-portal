@@ -1,0 +1,43 @@
+{
+  "name": "video",
+  "version": "0.6.2",
+  "homepage": "https://github.com/mkay581/video",
+  "description": "A lightweight framework that allows you to easily control videos using javascript.",
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "video",
+    "video player",
+    "videoplayerjs",
+    "social media",
+    "youtube",
+    "youtube video",
+    "social video"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "element-kit": "~1.0.5",
+    "underscore": "~1.8.2",
+    "promise": "~0.2.2"
+  },
+  "_release": "0.6.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.2",
+    "commit": "59bdef8d53b342229b71e4fa92d2820efbee6e9d"
+  },
+  "_source": "git://github.com/mkay581/video.git",
+  "_target": "~0.6.2",
+  "_originalSource": "video",
+  "_direct": true
+}
