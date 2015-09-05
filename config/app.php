@@ -148,8 +148,8 @@ return [
         /*
          * Workbench Service Providers...
          */
-        'Bakgat\Notos\Providers\NotosServiceProvider',
-        'Bakgat\Notos\Providers\RepoServiceProvider',
+        'Bakgat\Notos\NotosServiceProvider',
+        //'Bakgat\Notos\Providers\RepoServiceProvider',
 
 	],
 

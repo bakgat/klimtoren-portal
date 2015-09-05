@@ -14,7 +14,10 @@
     "kodeine/laravel-acl": "dev-master",
     "barryvdh/laravel-debugbar": "1.*",
     "fabpot/goutte": "dev-master",
-    "drewm/mailchimp-api": "dev-api-v3"
+    "drewm/mailchimp-api": "dev-api-v3",
+    "mitchellvanw/laravel-doctrine": "dev-master",
+    "beberlei/assert": "^2.3@dev",
+    "bakgat/notos": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",
@@ -49,5 +52,7 @@
   },
   "config": {
     "preferred-install": "dist"
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
