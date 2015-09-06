@@ -13,9 +13,6 @@
         toastr.options.positionClass = 'toast-bottom-right';
     }
 
-
-
-
     var config = {
         appErrorPrefix: '[Fout] ',
         appTitle: 'VBS De Klimtoren',
