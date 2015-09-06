@@ -14,7 +14,7 @@
                 <li><a ui-sref="media.photos"><i class="fa fa-camera"></i> foto's</a></li>
 
                 <li class="parent">
-                    <a href="#"><i class="fa fa-info-circle"></i> Info</a>
+                    <a><i class="fa fa-info-circle"></i> Info</a>
                     <ul class="sub">
                         <li><a ui-sref="info.about"><i class="fa fa-question"></i> over ons</a></li>
                         <li><a ui-sref="info.contact"><i class="fa fa-envelope"></i> contacteer ons</a></li>
