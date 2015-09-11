@@ -7,6 +7,8 @@ angular
         'ui.bootstrap',
         'ncy-angular-breadcrumb',
         'restangular',
+        'angulartics',
+        'angulartics.google.analytics',
 
 
         //cross app modules
