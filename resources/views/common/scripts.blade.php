@@ -22,8 +22,8 @@
 <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="/bower_components/angular-breadcrumb/dist/angular-breadcrumb.js"></script>
 <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
-<script src="/bower_components/angulartics/angulartics.min.js"></script>
-<script src="/bower_components/angulartics-google-analytics/angulartics-google-analytics.min.js"></script>
+<script src="/bower_components/angulartics/dist/angulartics.min.js"></script>
+<script src="/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
 <!-- end inject vendor:angular -->
 
 <script src="/js/plugins/revolution/jquery.themepunch.tools.min.js"></script>
