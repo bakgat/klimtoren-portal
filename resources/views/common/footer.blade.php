@@ -97,9 +97,9 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Mijn account</a></li>
+                            <!--<li><a href="#">Mijn account</a></li>
                             <li><a href="#">Maaltijden bestellen</a></li>
-                            <li><a href="#">Favorieten</a></li>
+                            <li><a href="#">Favorieten</a></li>-->
                             <li><a ui-sref="info.campaigns">Nieuwsbrieven</a></li>
                         </ul>
                     </nav>

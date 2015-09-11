@@ -61,7 +61,7 @@
     /* @ngInject */
     function afterViewContentLoaded($rootScope) {
         $rootScope.$on('$viewContentLoaded',function(){
-            $('html, body').animate({ scrollTop: 0 }, 200);
+            angular.element('html, body').animate({ scrollTop: 0 }, 200);
         })
     }
 

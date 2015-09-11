@@ -13,7 +13,7 @@
                 <div class="col-xs-6 col-md-10 col-lg-9 right-box">
                     <div class="right-box-wrapper">
                         <div class="header-icons">
-                            <div class="search-header hidden-600">
+                            <!--<div class="search-header hidden-600">
                                 <a href="#">
                                     <svg x="0" y="0" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 					<path d="M12.001,10l-0.5,0.5l-0.79-0.79c0.806-1.021,1.29-2.308,1.29-3.71c0-3.313-2.687-6-6-6C2.687,0,0,2.687,0,6
@@ -22,7 +22,7 @@
                                         <image src="img/png-icons/search-icon.png" alt="" width="16" height="16" style="vertical-align: top;">
 				  </svg>
                                 </a>
-                            </div><!-- .search-header
+                            </div>--><!-- .search-header
 
 			  --><div class="phone-header hidden-600">
                                 <a href="#">
