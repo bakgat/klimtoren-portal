@@ -15,7 +15,8 @@
     "barryvdh/laravel-debugbar": "1.*",
     "fabpot/goutte": "dev-master",
     "drewm/mailchimp-api": "dev-api-v3",
-    "mitchellvanw/laravel-doctrine": "dev-master",
+    "atrauzzi/laravel-doctrine": "dev-master",
+    "atrauzzi/laravel-serializer": "dev-master",
     "beberlei/assert": "^2.3@dev",
     "bakgat/notos": "dev-master"
   },
