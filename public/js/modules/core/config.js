@@ -25,16 +25,18 @@
 
     core.run(afterViewContentLoaded);
 
+    core.run(function(Analytics) {}); //Inject once for automatic page-tracking
+
     /* @ngInject */
     function configure($urlRouterProvider, $stateProvider,
                        routehelperConfigProvider, $breadcrumbProvider,
-                       RestangularProvider) {
+                       RestangularProvider, AnalyticsProvider) {
 
         configureRouting();
         configureBreadcrumb();
 
         configureRestangular();
-
+        configureGoogleAnalytics();
 
         function configureRouting() {
             routehelperConfigProvider.config.$urlRouterProvider = $urlRouterProvider;
@@ -55,6 +57,12 @@
             var baseUrl = '/api';
 
             RestangularProvider.setBaseUrl(baseUrl);
+        }
+
+        function configureGoogleAnalytics() {
+            // Set a single account
+            AnalyticsProvider.setAccount('UA-20593426-1');
+            AnalyticsProvider.setPageEvent('$stateChangeSuccess');
         }
     }
 

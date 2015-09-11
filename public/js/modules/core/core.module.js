@@ -7,9 +7,7 @@ angular
         'ui.bootstrap',
         'ncy-angular-breadcrumb',
         'restangular',
-        'angulartics',
-        'angulartics.google.analytics',
-
+        'angular-google-analytics',
 
         //cross app modules
         'blocks.exception',
