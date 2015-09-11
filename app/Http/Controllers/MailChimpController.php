@@ -17,52 +17,47 @@ use Illuminate\Support\Facades\Cache;
 class MailChimpController extends Controller
 {
     private $api_key = '6cbb5af4bc6c9222ea9bd818365aa1c3-us11';
+
     /**
      *
      */
     public function campaigns(Request $request)
     {
-        $key = 'campaigns';
-        if($request->input('take')){
-            $key += '_' + $request->input('take');
-        };
-        $cachekey = md5($key);
 
-        if(!Cache::has($cachekey)) {
-            $MailChimp = new MailChimp($this->api_key);
 
-            $params = [
-                //'fields'=>'campaigns.id,campaigns.settings.subject_line,campaigns.create_time,campaigns.archive_url,campaigns.settings.from_name,campaigns.settings.reply_to',
-                'status' => 'sent',
-                'sort_field' => 'create_time',
-                'sort_dir' => 'DESC'
-            ];
+        $MailChimp = new MailChimp($this->api_key);
 
-            if ($request->input('take')) {
-                $params = array_merge($params, ['count' => $request->input('take')]);
-            }
+        $params = [
+            //'fields'=>'campaigns.id,campaigns.settings.subject_line,campaigns.create_time,campaigns.archive_url,campaigns.settings.from_name,campaigns.settings.reply_to',
+            'status' => 'sent',
+            'sort_field' => 'create_time',
+            'sort_dir' => 'DESC'
+        ];
 
-            $result = $MailChimp->get('campaigns', $params);
-            Cache::put($cachekey, $result, 300);
+        if ($request->input('take')) {
+            $params = array_merge($params, ['count' => $request->input('take')]);
         }
 
-        return JsonResponse::create(Cache::get($cachekey));
+        $result = $MailChimp->get('campaigns', $params);
+
+
+        return JsonResponse::create($result);
     }
 
-    public function subscribeCount() {
-        $cachekey = md5('mc_count');
+    public
+    function subscribeCount()
+    {
+
         $list_key = '968b712dd6';
-        if(!Cache::has($cachekey)) {
-            $MailChimp = new MailChimp($this->api_key);
+        $MailChimp = new MailChimp($this->api_key);
 
-            $params = [
-                'fields' => 'stats.member_count'
-            ];
+        $params = [
+            'fields' => 'stats.member_count'
+        ];
 
-            $result = $MailChimp->get('lists/' . $list_key, $params);
-            Cache::put($cachekey, $result, 300);
-        }
+        $result = $MailChimp->get('lists/' . $list_key, $params);
 
-        return JsonResponse::create(Cache::get($cachekey));
+
+        return JsonResponse::create($result);
     }
 }
