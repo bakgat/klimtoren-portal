@@ -26,12 +26,13 @@
         var collections = [
             {
                 name: '2015-2016',
-                href: 'https://plus.google.com/b/103406123671942529660/collection/sYLa3'
+                href: 'https://plus.google.com/b/103406123671942529660/collection/sYLa3',
+                preview: 'https://lh3.googleusercontent.com/-G-Qj-TTAW2M/VfbE9gxgSRI/AAAAAAAADZ0/NfJmsesxHIg/w777-h583-no/DSC_0026.JPG'
             },
             {
                 name: '2014-2015',
                 href: 'https://plus.google.com/b/103406123671942529660/collection/U5aa3',
-                preview: 'https://lh3.googleusercontent.com/-WuQRYCenP8w/VelsvrGL-fI/AAAAAAAAAqI/rj6IT0gPJWM/w640-h480-p/DSCN3028.JPG'
+                preview: 'https://lh3.googleusercontent.com/-WuQRYCenP8w/VelsvrGL-fI/AAAAAAAAAqI/rj6IT0gPJWM/w777-h583-no/DSCN3028.JPG'
             },
             {
                 name: '2013-2014',

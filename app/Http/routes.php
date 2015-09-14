@@ -55,6 +55,7 @@ Route::group(['prefix'=>'/api'], function() {
     Route::group(['prefix'=>'/mailchimp'], function() {
         Route::get('/member_count', 'MailChimpController@subscribeCount');
         Route::get('/campaigns', 'MailChimpController@campaigns');
+        Route::get('/lists/{listId}/categories', 'MailChimpController@categories');
     });
 
 });

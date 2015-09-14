@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Cache;
 class MailChimpController extends Controller
 {
     private $api_key = '6cbb5af4bc6c9222ea9bd818365aa1c3-us11';
+    private $list_key = '968b712dd6';
 
     /**
      *
@@ -44,18 +45,49 @@ class MailChimpController extends Controller
         return JsonResponse::create($result);
     }
 
-    public
-    function subscribeCount()
+    public function categories()
+    {
+        if (Cache::has('mailchimp_categories')) {
+            return JsonResponse::create(Cache::get('mailchimp_categories'));
+        }
+        $MailChimp = new MailChimp($this->api_key);
+        $result = $MailChimp->get('lists/' . $this->list_key . '/interest-categories');
+
+        $lists = [];
+        foreach ($result['categories'] as $category) {
+            $category_dto = [
+                'id' => $category['id'],
+                'title' => $category['title'],
+                'interests' => []
+            ];
+
+            $interests = $MailChimp->get('lists/' . $this->list_key . '/interest-categories/' . $category['id'] . '/interests');
+
+            foreach ($interests['interests'] as $interest) {
+                $int_dto = [
+                    'id' => $interest['id'],
+                    'name' => $interest['name']
+                ];
+                $category_dto['interests'][] = $int_dto;
+            }
+
+            $lists[] = $category_dto;
+        }
+        Cache::forever('mailchimp_categories', $lists);
+        return JsonResponse::create($lists);
+    }
+
+    public function subscribeCount()
     {
 
-        $list_key = '968b712dd6';
+
         $MailChimp = new MailChimp($this->api_key);
 
         $params = [
             'fields' => 'stats.member_count'
         ];
 
-        $result = $MailChimp->get('lists/' . $list_key, $params);
+        $result = $MailChimp->get('lists/' . $this->list_key, $params);
 
 
         return JsonResponse::create($result);
