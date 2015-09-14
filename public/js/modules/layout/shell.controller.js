@@ -22,7 +22,6 @@
 
 
         function activate() {
-            console.log($state);
             MailChimp.memberCount().then(function(response) {
                 vm.campaign_members = response.data.stats.member_count;
             });

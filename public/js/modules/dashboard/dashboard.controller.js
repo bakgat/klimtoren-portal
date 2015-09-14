@@ -24,7 +24,7 @@
             vm.collections = GPCollections.take(4);
 
             MailChimp.campaigns(3).then(function(response) {
-                vm.campaigns = response.data.campaigns;
+                vm.campaigns = response;
             });
         }
     }
