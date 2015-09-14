@@ -22,7 +22,7 @@
             MailChimp.campaigns().then(campaignsSuccess);
 
             function campaignsSuccess(response) {
-                vm.campaigns = response.data.campaigns;
+                vm.campaigns = response;
             }
         }
 

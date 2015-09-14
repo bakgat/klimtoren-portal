@@ -23,7 +23,6 @@
         function campaigns(take) {
 
 
-
             return $http.get('/api/mailchimp/campaigns'/*, {params: {take: take}} TAKE ALL NOW AS IT MUST BE FILTERED*/)
                 .then(campaignsSuccess);
 
@@ -31,14 +30,15 @@
                 var result = [];
                 var i = 0;
                 angular.forEach(response.data.campaigns, function (campaign) {
-                    if (!campaign.recipients.segment_opts && i < 3) {
-                        result.push(campaign);
-                        i++;
+                    if (!campaign.recipients.segment_opts) {
+                        if (!i || i < take) {
+                            result.push(campaign);
+                            i++;
+                        }
                     }
                 });
                 return result;
             }
-
         }
 
         function memberCount() {
