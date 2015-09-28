@@ -65,10 +65,9 @@
             return result;
         }
 
-
         function init() {
             updateDocTitle();
-            $urlRouterProvider.otherwise('/index/dashboard');
+            $urlRouterProvider.otherwise('/error/404');
         }
 
         function updateDocTitle() {

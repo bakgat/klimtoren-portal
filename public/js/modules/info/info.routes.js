@@ -64,7 +64,30 @@
                     title: 'Zorg op onze school'
                 }
             },
-            ,
+            {
+                state: 'info.team',
+                config: {
+                    url: '/team',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/team.html'
+                        }
+                    },
+                    title: 'Ons team'
+                }
+            },
+            {
+                state: 'info.calendar',
+                config: {
+                    url: '/calendar',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/calendar.html'
+                        }
+                    },
+                    title: 'Kalender'
+                }
+            },
             {
                 state: 'info.campaigns',
                 config: {

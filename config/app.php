@@ -135,6 +135,7 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+		'Illuminate\Broadcasting\BroadcastServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -150,6 +151,9 @@ return [
          */
         'Bakgat\Notos\NotosServiceProvider',
         //'Bakgat\Notos\Providers\RepoServiceProvider',
+
+
+		'Mailchimp\MailchimpServiceProvider',
 
 	],
 

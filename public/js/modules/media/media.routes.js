@@ -41,6 +41,20 @@
                     },
                     title: 'foto\'s'
                 }
+            },
+            {
+                state: 'media.videos',
+                config: {
+                    url: '/videos',
+                    views: {
+                        'content@media': {
+                            templateUrl: 'js/modules/media/videos.html',
+                            controller: 'VideoController',
+                            controllerAs: 'vm'
+                        }
+                    },
+                    title: 'video\'s'
+                }
             }
         ];
     };

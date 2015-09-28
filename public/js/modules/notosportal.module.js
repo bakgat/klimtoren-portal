@@ -7,10 +7,13 @@
             'notosportal.core',
             'notosportal.layout',
             'notosportal.widgets',
+            'notosportal.data',
+            'notosportal.auth',
 
             //app modules
             'notosportal.dashboard',
             'notosportal.info',
-            'notosportal.media'
+            'notosportal.media',
+            'notosportal.links'
         ]);
 })();

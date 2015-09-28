@@ -9,10 +9,10 @@
 namespace Portal\Http\Controllers;
 
 
-use DrewM\MailChimp\MailChimp;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Mailchimp\Mailchimp;
 
 class MailChimpController extends Controller
 {
@@ -61,7 +61,7 @@ class MailChimpController extends Controller
                 'interests' => []
             ];
 
-            $interests = $MailChimp->get('lists/' . $this->list_key . '/interest-categories/' . $category['id'] . '/interests');
+            $interests = $MailChimp->request('lists/' . $this->list_key . '/interest-categories/' . $category['id'] . '/interests');
 
             foreach ($interests['interests'] as $interest) {
                 $int_dto = [
@@ -87,7 +87,9 @@ class MailChimpController extends Controller
             'fields' => 'stats.member_count'
         ];
 
-        $result = $MailChimp->get('lists/' . $this->list_key, $params);
+        $result = $MailChimp->get('lists/' . $this->list_key, [
+            'fields' => 'id,name,stats.member_count'
+        ]);
 
 
         return JsonResponse::create($result);

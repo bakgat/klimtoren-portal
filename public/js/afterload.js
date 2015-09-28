@@ -39,9 +39,9 @@ $(document).ready(function () {
         $('body').addClass('touch-device');
 
     menu();
+
+
 });
-
-
 
 
 //Header Menu
@@ -118,6 +118,68 @@ function menu() {
         topMenu.css('width', 'auto');
 }
 
+//Banner set Start
+function bannerSetCarousel() {
+    $('.banner-set .banners').each(function () {
+        var $this = $(this),
+            bannerSet = $this.closest('.banner-set'),
+            prev = bannerSet.find('.prev'),
+            next = bannerSet.find('.next'),
+            autoPlay = true,
+            timeoutDuration = 2000,
+            scrollDuration = 1000,
+            height;
+
+        /* Animation Duration */
+        if (bannerSet.data('animationDuration'))
+            scrollDuration = bannerSet.data('animationDuration');
+
+        /* Autoplay */
+        if (bannerSet.data('autoplayDisable'))
+            autoPlay = false;
+        else
+        /* Autoplay Speed */
+        if (bannerSet.data('autoplaySpeed'))
+            timeoutDuration = bannerSet.data('autoplaySpeed');
+
+        $this.carouFredSel({
+            auto: {
+                play: autoPlay,
+                timeoutDuration: timeoutDuration
+            },
+            width: '100%',
+            responsive: false,
+            infinite: false,
+            next: next,
+            prev: prev,
+            pagination: bannerSet.find('.pagination'),
+            scroll: {
+                duration: scrollDuration,
+                items: 1
+            },
+            onCreate: function () {
+                height = $this.height();
+
+                $this.find('.banner').css('height', height);
+                if (bannerSet.hasClass('banner-set-mini') && bannerSet.hasClass('banner-set-no-pagination')) {
+                    bannerSet.find('.prev, .next').css('margin-top', -((height / 2) + 7));
+                }
+            }
+        })
+            .touchwipe({
+                wipeLeft: function () {
+                    $this.trigger('next', 1);
+                },
+                wipeRight: function () {
+                    $this.trigger('prev', 1);
+                },
+                preventDefaultEvents: false
+            })
+            .parents('.banner-set').removeClass('load');
+    });
+}
+//Banner set End
+
 
 (function () {
     var delay = (function () {
@@ -129,6 +191,7 @@ function menu() {
     })();
 
     function resizeFunctions() {
+        if ($('.banner-set').length && typeof bannerSetCarousel == 'function') bannerSetCarousel();
     }
 
     if (isTouchDevice) {

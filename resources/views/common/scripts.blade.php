@@ -28,6 +28,9 @@
 <script src="/js/plugins/revolution/jquery.themepunch.tools.min.js"></script>
 <script src="js/plugins/revolution/jquery.themepunch.revolution.min.js"></script>
 
+<script src="/bower_components/gilbitron/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/js/plugins/touchwipe/jquery.touchwipe.min.js"></script>
+
 
 <script src="/bower_components/jquery-appear/build/jquery.appear.min.js"></script>
 <script src="/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>

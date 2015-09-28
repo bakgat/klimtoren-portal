@@ -27,7 +27,7 @@
             {
                 name: '2015-2016',
                 href: 'https://plus.google.com/b/103406123671942529660/collection/sYLa3',
-                preview: 'https://lh3.googleusercontent.com/-G-Qj-TTAW2M/VfbE9gxgSRI/AAAAAAAADZ0/NfJmsesxHIg/w777-h583-no/DSC_0026.JPG'
+                preview: 'https://lh3.googleusercontent.com/-G-Qj-TTAW2M/VfbE9gxgSRI/AAAAAAAADZ0/NfJmsesxHIg/w738-h492-no/DSC_0026.JPG'
             },
             {
                 name: '2014-2015',

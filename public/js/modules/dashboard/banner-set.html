@@ -1,0 +1,19 @@
+<div class="banner-set load" >
+    <div class="container">
+        <div class="banners">
+            <a data-ng-href="{{blog.url}}" target="_blank" class="banner" data-ng-repeat="blog in vm.blogs" >
+                <img class="replace-2x" data-ng-src="{{blog.image.url}}" width="253" height="158" alt="">
+                <h2 class="title" data-ng-bind="blog.name"></h2>
+                <div class="description" data-ng-bind="blog.description"></div>
+            </a>
+        </div><!-- .banners -->
+        <div class="clearfix"></div>
+    </div>
+    <div class="nav-box">
+        <div class="container">
+            <a class="prev" href="#"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            <div class="pagination switches"></div>
+            <a class="next" href="#"><span class="glyphicon glyphicon-arrow-right"></span></a>
+        </div>
+    </div>
+</div><!-- .banner-set -->

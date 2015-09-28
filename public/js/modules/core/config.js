@@ -25,6 +25,8 @@
 
     core.run(afterViewContentLoaded);
 
+    core.run(set404);
+
     core.run(function(Analytics) {}); //Inject once for automatic page-tracking
 
     /* @ngInject */
@@ -71,6 +73,14 @@
         $rootScope.$on('$viewContentLoaded',function(){
             angular.element('html, body').animate({ scrollTop: 0 }, 200);
         })
+    }
+
+    /* @ngInject */
+    function set404($rootScope) {
+        $rootScope.$on('$stateChangeError', function(event) {
+            event.preventDefault();
+            $state.go('error.404');
+        });
     }
 
 })();

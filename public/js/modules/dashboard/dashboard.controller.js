@@ -26,6 +26,8 @@
             MailChimp.campaigns(3).then(function(response) {
                 vm.campaigns = response;
             });
+
+
         }
     }
 })();

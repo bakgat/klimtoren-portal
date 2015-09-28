@@ -40,6 +40,11 @@
                         },
                         'slider@index': {
                             templateUrl: 'js/modules/dashboard/slider.html'
+                        },
+                        'banner-set@index': {
+                            templateUrl: 'js/modules/dashboard/banner-set.html',
+                            controller: 'BannersetController',
+                            controllerAs: 'vm'
                         }
                     },
                     title: 'Dashboard'
