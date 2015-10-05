@@ -13,6 +13,7 @@
     /* @ngInject */
     function Video($q) {
         var videos = [
+            {id: 'hXPjArV6_rA', title: 'Saved by the bell 2015'},
             {id: '_k8Zw9rYmB4', title: 'Onze zorgvisie'},
             {id: 'OEqAylOlIho', title: 'De Klimtoren Wave'},
             {id: 'JaGQQOCFq5s', title: 'Ice Bucket Challenge mevr. Rebekka'}
