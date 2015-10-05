@@ -15,7 +15,7 @@
             <p>Wilt u de nieuwsbrieven lezen die u hebt gemist? Hieronder vindt u ons archief.</p>
         </div>
 
-        <article class="post col-sm-12 col-md-4" data-ng-repeat="campaign in vm.campaigns">
+        <article class="post col-sm-12 col-md-4" data-ng-repeat="campaign in vm.campaigns | orderBy:'-send_time'">
             <h2 class="entry-title"><a data-ng-href="{{campaign.archive_url}}" target="_blank"
                                        data-ng-bind="campaign.settings.subject_line"></a></h2>
 
@@ -23,7 +23,7 @@
                 gepost door <a class="autor-name" data-ng-href="mailto:{{campaign.settings.reply_to}}"
                                data-ng-bind="campaign.settings.from_name"></a>
                 <br/>
-                <span class="time">gepubliceerd op {{campaign.create_time | date : 'dd.MM.yyyy'}}</span>
+                <span class="time">gepubliceerd op {{campaign.send_time | date : 'dd.MM.yyyy'}}</span>
 
             </footer>
         </article>

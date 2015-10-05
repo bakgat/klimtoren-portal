@@ -33,9 +33,11 @@
                                         <li><a href="content/documents/2015/schoolbrochure2015-2016.pdf" target="_blank"><i class="fa fa-download"></i> Schoolbrochure</a></li>
                                         <li><a ui-sref="info.about"><i class="fa fa-question"></i> Onze visie</a></li>
                                         <li><a ui-sref="info.team"><i class="fa fa-mortar-board"></i> Ons team</a></li>
+                                        <li><a ui-sref="info.management"><i class="fa fa-institution"></i> Schoolbestuur</a></li>
                                     </ul>
                                 </div><!-- .box -->
 
+                                <!--
                                 <div class="box closed">
                                     <h6 class="title">Gezonde school</h6>
                                     <ul>
@@ -76,14 +78,15 @@
                                     <ul>
                                         <li><a ui-sref="info.contact"><i class="fa fa-paper-plane"></i> Contacteer ons</a></li>
                                         <li><a ui-sref="info.campaigns"><i class="fa fa-newspaper-o"></i> Nieuwsbrieven</a></li>
+                                        <li><a ui-sref="links.leaflets"><i class="fa fa-map-o"></i> Folders</a></li>
                                     </ul>
                                 </div><!-- .box -->
 
                             </div><!-- .sub-list -->
 
-                            <div class="promo-block text-right">
+                            <div class="promo-block text-right ">
                                 <a href="#">
-                                    <img class="replace-2x" src="https://lh3.googleusercontent.com/-P6nIs9mcbns/VfbP1JDRONI/AAAAAAAAD2Y/oSllM5AFrlI/w738-h492-no/DSC_0006.JPG" width="253" height="357" alt="">
+                                    <img class="replace-2x" src="content/img/navigation/promo_block_2.png" width="300" height="424" alt="">
                                 </a>
                             </div><!-- .promo-block -->
                         </li>
@@ -96,7 +99,7 @@
                         <li><a ui-sref="parents.pta">Ouderraad</a></li>
                         <li><a ui-sref="parents.schoolboard">Schoolraad</a></li>
                         <li><a ui-sref="parents.read">Lees(groot)ouders</a></li>
-                        <li><a ui-sref="parents.board">Vrijwilligers</a></li>
+                        <li><a ui-sref="parents.volunteers">Vrijwilligers</a></li>
                     </ul>
                 </li>
 

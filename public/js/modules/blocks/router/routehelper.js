@@ -67,7 +67,7 @@
 
         function init() {
             updateDocTitle();
-            $urlRouterProvider.otherwise('/error/404');
+            $urlRouterProvider.otherwise('/index/dashboard');
         }
 
         function updateDocTitle() {

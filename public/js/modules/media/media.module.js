@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('notosportal.media', []);
+        .module('notosportal.media', ['youtube-embed']);
 })();

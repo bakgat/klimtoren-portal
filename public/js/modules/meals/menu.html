@@ -1,0 +1,20 @@
+<header class="page-header animated fadeInDown">
+    <div class="container">
+        <h1 class="title">Menu</h1>
+    </div>
+</header>
+
+<div class="container animated fadeInUp">
+    <div class="row bottom-padding">
+        <div data-ng-bind-html="vm.mealsHtml"></div>
+        <div data-ng-show="vm.mealsHtml === '' || vm.mealsNotFound" class="col-sm-12 col-md-12 text-center">
+            <i class="fa fa-spinner fa-spin fa-2x"></i>
+        </div>
+
+        <div data-ng-if="vm.mealsNotFound" class="alert alert-danger fade in">
+            <div class="fa fa-search alert-icon pull-left"></div>
+            <strong>Sorry, we konden de menu voor de komende weken niet vinden. </strong><br/>
+            Probeer later eens opnieuw.
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@
     var core = angular.module('notosportal.core');
 
     core.config(toastrConfig);
+    core.config(momentConfig);
 
     /* @ngInject */
     function toastrConfig(toastr) {
@@ -18,6 +19,11 @@
         appTitle: 'VBS De Klimtoren',
         version: '1.0.0'
     };
+
+    /* @ngInject */
+    function momentConfig(moment) {
+        moment.locale('nl-be');
+    }
 
     core.value('config', config);
 

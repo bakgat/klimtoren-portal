@@ -1,16 +1,59 @@
 <header class="page-header animated fadeInDown">
     <div class="container">
         <h1 class="title">Kalender</h1>
+
     </div>
 </header>
 
-<div class="container animated fadeInUp">
+<div class="container">
     <div class="row bottom-padding">
 
-        <div class="text-center col-sm-12 col-md-12">
-            <h4>Sorry, aan deze pagina zijn we nog even bezig.</h4>
-            <p>Binnenkort vindt u hier al onze activiteiten op rij</p>
+        <!--<div class="col-xs-12 col-md-12 text-center " data-ng-show="!vm.events.length">
+            <h4>Sorry, we vinden geen activiteiten.</h4>
+            <p>Kom snel terug, dan vindt u zeker meer.</p>
             <br><hr><br>
+        </div>-->
+        <div class="timeline">
+            <article class="post" data-ng-repeat="(key, value) in vm.events">
+                <div class="timeline-time">
+                    <time datetime="{{key}}">{{key}}</time>
+                </div>
+
+                <div class="timeline-icon" data-ng-class="vm.randomColor($index)">
+                    <div livicon data-n="calendar" data-c="#fff" data-hc="0" data-s="22"></div>
+                </div>
+
+                <div class="timeline-content bg" data-ng-class="vm.randomColor($index)"
+                     data-appear-animation="{{$even ? 'fadeInLeft' : 'fadeInRight'}}">
+                    <h2 class="entry-title">
+                        <a href="javascript:void(0);">{{value.length}} activiteit<span
+                                data-ng-if="value.length!==1">en</span></a>
+                    </h2>
+
+
+                    <div class="entry-content">
+                        <dl class="dl-horizontal" data-ng-repeat="event in value">
+                            <dt>
+                                <span data-ng-bind="event.start | date:'HH.mmu'"></span>
+                                <span data-ng-if="event.end"> - {{event.end | date : 'HH.mmu'}}</span>
+                            </dt>
+                            <dd>
+                                <h4 class="title no-margin" data-ng-bind="event.name"></h4>
+                                <span data-ng-if="event.description" data-ng-bind="event.description"></span>
+
+                                <p data-ng-if="event.groups.length" class="small">Voor:
+                                        <span data-ng-repeat="group in event.groups">{{group.name}}
+                                            <span class="separator" data-ng-if="!$last">, </span>
+                                        </span>
+                                </p>
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+            </article>
+            <!-- .post -->
         </div>
+
     </div>
 </div>

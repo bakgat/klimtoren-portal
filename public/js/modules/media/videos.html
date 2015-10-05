@@ -5,19 +5,15 @@
 </header>
 
 <div class="container  animated fadeInUp">
-    <div class="portfolio">
-        <div class="row ">
-            <div class="work-element col-xs-12 col-sm-3 col-md-3" data-ng-repeat="collection in vm.collections">
-                <a data-ng-href="{{collection.href}}" class="work" target="_blank">
-                    <img class="replace-2x" data-ng-src="{{collection.preview}}" width="270" height="197" alt="">
-                    <span class="shadow"></span>
-
-                    <div class="bg-hover"></div>
-                    <div class="work-title">
-                        <h3 class="title">Schooljaar {{collection.name}}</h3>
-                    </div>
-                </a>
+    <div class="row bottom-padding">
+        <div class="bottom-padding col-sm-6 col-md-6" data-ng-repeat="video in vm.videos">
+            <div class="title-box">
+                <h2 class="title" data-ng-bind="video.title"></h2>
+            </div>
+            <div class="video-box youtube">
+                <youtube-video video-id="video.id"></youtube-video>
             </div>
         </div>
+
     </div>
 </div>

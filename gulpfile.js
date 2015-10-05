@@ -29,8 +29,8 @@ var notify = require('gulp-notify');
 var gulp = require('gulp');
 
 
-gulp.task('less', function () {
-    return gulp.src('resources/assets/less/style.less')
+gulp.task('main', function () {
+    return gulp.src('resources/assets/main/style.less')
         //.pipe(watchLess('resources/assets/less/style.less'))
         .pipe(less({compress: true}))
         .pipe(autoprefixer('last 10 versions', 'ie 9'))
@@ -39,6 +39,25 @@ gulp.task('less', function () {
         .pipe(gulp.dest('public/css'))
         .pipe(notify('Portal Less Compiled, Prefixed and Minified'));
 });
+gulp.task('customizers', function () {
+    return gulp.src('resources/assets/customizer/home-pages-customizer.less')
+        .pipe(less({compress: true}))
+        .pipe(autoprefixer('last 10 versions', 'ie 9'))
+        .pipe(minifyCSS({keepBreaks: false}))
+        .pipe(rename('home-pages-customizer.min.css'))
+        .pipe(gulp.dest('public/css/customizer'))
+        .pipe(notify('Customizers Less Compiled, Prefixed and Minified'));
+});
+
+gulp.task('bootstrap', function() {
+    return gulp.src('resources/assets/bootstrap/less/bootstrap.less')
+        .pipe(less({compress:true}))
+        .pipe(autoprefixer('last 10 versions', 'ie 9'))
+        .pipe(minifyCSS({keepBreaks: false}))
+        .pipe(rename('bootstrap.min.css'))
+        .pipe(gulp.dest('public/css'))
+        .pipe(notify('Bootstrap Less Compiled, Prefixed and Minified'));
+})
 
 
 
@@ -63,7 +82,9 @@ gulp.task('js', function () {
 
 gulp.task('watch', function() {
     gulp.watch('public/js/modules/**/*.js', ['js']);
-    gulp.watch('resources/assets/less/**/*.less', ['less']);  // Watch all the .less files, then run the less task
+    gulp.watch('resources/assets/main/**/*.less', ['main']);  // Watch all the .less files, then run the less task
+    gulp.watch('resources/assets/bootstrap/**/*.less', ['bootstrap']);  // Watch all the .less files, then run the less task
+    gulp.watch('resources/assets/customizer/**/*.less', ['customizers']);  // Watch all the .less files, then run the less task
 });
 
 gulp.task('default', ['watch']);

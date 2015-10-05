@@ -14,6 +14,10 @@
             'notosportal.dashboard',
             'notosportal.info',
             'notosportal.media',
-            'notosportal.links'
+            'notosportal.links',
+            'notosportal.health',
+            'notosportal.meals',
+            'notosportal.spotlight',
+            'notosportal.parents'
         ]);
 })();

@@ -37,7 +37,7 @@
                 var i = 0;
                 angular.forEach(response.data.campaigns, function (campaign) {
                     if (!campaign.recipients.segment_opts) {
-                        if (!i || i < take) {
+                        if (!take || i < take) {
                             result.push(campaign);
                             i++;
                         }

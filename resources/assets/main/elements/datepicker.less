@@ -1,0 +1,23 @@
+//Overrides Angular Boostrap defaults
+.datepicker {
+  font-size: 14px;
+
+  + .dropdown-menu {
+    position: initial;
+
+    + .input-group-btn {
+      vertical-align: top;
+    }
+
+    & .btn.btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc;
+
+      &:hover {
+        background-color: #ebebeb;
+        border-color: #adadad;
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
 
 
 <!-- inject vendor:angular -->
+<script src="/bower_components/angular-i18n/angular-locale_nl-be.js"></script>
 <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
@@ -23,6 +24,8 @@
 <script src="/bower_components/angular-breadcrumb/dist/angular-breadcrumb.js"></script>
 <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
 <script src="/bower_components/angular-google-analytics/dist/angular-google-analytics.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="/bower_components/angular-youtube-mb/dist/angular-youtube-embed.min.js"></script>
 <!-- end inject vendor:angular -->
 
 <script src="/js/plugins/revolution/jquery.themepunch.tools.min.js"></script>

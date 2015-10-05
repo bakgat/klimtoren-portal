@@ -1,0 +1,164 @@
+<header class="page-header animated fadeInDown">
+    <div class="container">
+        <h1 class="title">Inschrijven</h1>
+    </div>
+</header>
+
+<div class="container animated fadeInUp">
+    <div class="row bottom-padding">
+        <div class="alert border border-success lead">
+            <div livicon data-n="question" data-c="#738d00" data-hc="0" data-s="22"></div>
+            Heeft u interesse in onze school? U vindt op deze pagina alle info die u nodig hebt.
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="title-box">
+                <h3>Zonder afspraak</h3>
+            </div>
+            <p>
+                U bent altijd welkom in onze school <strong>tijdens de schooluren.</strong><br/>
+                Spring gerust binnen, dan kan u ook direct even in de klas binnen piepen.
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="title-box">
+                <h3>Met afspraak</h3>
+            </div>
+            <p>
+                Een afspraak kan u maken met mevr. Rebekka Buyse, directeur van de school.<br/>
+                <a href="mailto:info@klimtoren.be"><i class="fa fa-envelope-o"></i> info@klimtoren.be</a><br/>
+                <a href="tel:+3250812714"><i class="fa fa-phone"></i> +32 (0)50 81 27 14</a>
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="title-box">
+                <h3>Opendeur</h3>
+            </div>
+            <p>
+                U kan ook meer info krijgen over de klaswerking tijdens de opendeurdagen.<br/>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <article class="content col-xs-12 col-md-12">
+            <div class="title-box">
+                <h3>Veelgestelde vragen</h3>
+            </div>
+            <accordion close-others="true">
+                <accordion-group>
+                    <accordion-heading>
+                        Waneer mag mijn kind voor het eerst naar school?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        Uw kind mag naar school op de eerste instapdatum zodra uw kind 2 jaar en 6 maanden is geworden.<br>
+                        Benieuwd wanneer uw kind mag starten? Selecteer hieronder de geboortedatum van uw kind:
+                    </div>
+
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <p class="input-group">
+                            <input type="text" class="form-control datepicker" data-datepicker-popup="dd MMMM yyyy"
+                                   data-ng-model="vm.birthday"
+                                   data-is-open="vm.dateStatus.opened" data-ng-required="true" data-close-text="Sluiten"
+                                   data-today-text="Vandaag" data-clear-text="Wissen"
+                                   data-datepicker-options="vm.dateOptions"/>
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" data-ng-click="vm.openDate($event)"><i
+                                        class="fa fa-calendar"></i>
+                                </button>
+                            </span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <!--<button class="btn btn-default" data-ng-click="vm.calculate()">bereken</button>-->
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="well well-sm bg bg-warning" data-ng-show="vm.canGo">
+                            <i class="fa fa-exclamation"></i>
+                            Uw kind mag nu al naar school. U hoeft geen instapdatum meer af te wachten.
+                        </div>
+                        <div class="well well-sm bg bg-primary" data-ng-show="vm.nextRegisterDate">
+                            <i class="fa fa-information"></i>
+                            Volgende instapdatum: {{vm.nextRegisterDate | date : 'd MMMM yyyy' : 'Europe\Brussels'}}
+                        </div>
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Wat heb ik nodig bij de inschrijving?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        Heel weinig: enkel een e-id van uw kind.
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Hoeveel kost school?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        <p>Onderwijs is in principe gratis.</p>
+
+                        <p>
+                            Er is een maximumfactuur vastgelegd.
+                            Zo betaalt u maximaal <strong>&euro;45</strong> per schooljaar in de kleuterschool voor uitstappen en andere
+                            schoolkosten.
+                            <br />
+                            In de lagere school betaalt u maximaal <strong>&euro;85</strong> per schooljaar.
+                        </p>
+
+                        <p>
+                            Maaltijden, drankjes en abonnementen op tijdschriften vallen niet onder deze maximumfactuur.<br/>
+                        </p>
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Moet mijn kind zindelijk zijn?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        In het kort: nee. In de peuterklas zijn er kleine toiletjes en een ververshoek. <br/>
+                        Als uw kind nog niet zindelijk is, vragen we om een pak pampers en vochtige doekjes mee te geven in het begin van het schooljaar.
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Wat als mijn kind nog slaapt over de middag?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        De peuters kunnen over de middag even rusten in het slaapklasje. Om 13.15u sluiten alle kinderen weer aan bij de klas.
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Is school niet vreselijk druk?
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        Voor peuters kan de school heel overweldigend zijn. Daarom hebben we voor hen speciaal een afzonderlijke speelplaats met aangepast speelgoed.
+                        <br/>
+                        's Middags gaan de peuters ook in een apart eetzaaltje eten.
+                    </div>
+                </accordion-group>
+
+                <accordion-group>
+                    <accordion-heading>
+                        Kon ik maar een vliegje zijn...
+                    </accordion-heading>
+                    <div class="content-block bottom-padding-mini frame frame-shadow-curved">
+                        <p>We weten als geen ander hoe benieuwd je bent om je kind bezig te zien in de klas.<br/>
+                        Als je even wil kijken: volg de <a href="http://peuterklas.klimtoren.be" target="_blank">blog van de peuterklas</a>.<br/>
+                        Op het einde van het schooljaar kan je ook een dvd aankopen waarin je de kinderen van de klas gedurende het hele schooljaar bezig ziet in verschillende activiteiten.<br/>
+                        Zo proberen we jullie toch even een vliegje te laten zijn...
+                        </p>
+                        <p class="well bg bg-success white">
+                            Al zijn we een grote school, we willen graag een warm nest zijn voor alle kinderen.
+                        </p>
+                    </div>
+                </accordion-group>
+            </accordion>
+        </article>
+    </div>
+</div>

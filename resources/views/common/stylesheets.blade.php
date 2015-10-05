@@ -2,7 +2,7 @@
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic'>
 
 <!-- Plugins CSS -->
-<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/jslider.css">
 <!-- Revolution Slider -->
@@ -27,7 +27,7 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/customizer/pages.css">
-<link rel="stylesheet" href="css/customizer/home-pages-customizer.css">
+<link rel="stylesheet" href="css/customizer/home-pages-customizer.min.css">
 
 <!-- IE Styles-->
 <link rel='stylesheet' href="css/ie/ie.css">

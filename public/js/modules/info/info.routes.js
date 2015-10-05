@@ -82,7 +82,9 @@
                     url: '/calendar',
                     views: {
                         'content@info': {
-                            templateUrl: 'js/modules/info/calendar.html'
+                            templateUrl: 'js/modules/info/calendar.html',
+                            controller: 'CalendarController',
+                            controllerAs: 'vm'
                         }
                     },
                     title: 'Kalender'
@@ -100,6 +102,20 @@
                         }
                     },
                     title: 'Nieuwsbrieven'
+                }
+            },
+            {
+                state: 'info.register',
+                config: {
+                    url: '/register',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/register.html',
+                            controller: 'RegisterController',
+                            controllerAs: 'vm'
+                        }
+                    },
+                    title: 'Inschrijven'
                 }
             }
         ];

@@ -24,10 +24,6 @@
             function campaignsSuccess(response) {
                 vm.campaigns = response;
             }
-
-            MailChimp.mailToSegments().then(function(response) {
-                console.log(response);
-            });
         }
 
 
