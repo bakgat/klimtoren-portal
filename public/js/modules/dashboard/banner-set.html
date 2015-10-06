@@ -3,8 +3,8 @@
         <div class="banners">
             <a data-ng-href="{{blog.url}}" target="_blank" class="banner" data-ng-repeat="blog in vm.blogs" >
                 <img class="replace-2x" data-ng-src="{{blog.image.url}}" width="253" height="158" alt="">
-                <h2 class="title" data-ng-bind="blog.name"></h2>
-                <div class="description" data-ng-bind="blog.description"></div>
+                <h2 class="title text-center margin-mini" data-ng-bind="blog.name"></h2>
+                <!--<div class="description" data-ng-bind="blog.description"></div>-->
             </a>
         </div><!-- .banners -->
         <div class="clearfix"></div>
