@@ -125,7 +125,7 @@ function bannerSetCarousel() {
             bannerSet = $this.closest('.banner-set'),
             prev = bannerSet.find('.prev'),
             next = bannerSet.find('.next'),
-            autoPlay = false,
+            autoPlay = true,
             timeoutDuration = 2000,
             scrollDuration = 1000,
             height;
