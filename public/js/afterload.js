@@ -43,7 +43,6 @@ $(document).ready(function () {
 
 });
 
-
 //Header Menu
 function menu() {
     var body = $('body'),

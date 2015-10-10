@@ -33,7 +33,8 @@
                                         <li><a href="content/documents/2015/schoolbrochure2015-2016.pdf" target="_blank"><i class="fa fa-download"></i> Schoolbrochure</a></li>
                                         <li><a ui-sref="info.about"><i class="fa fa-question"></i> Onze visie</a></li>
                                         <li><a ui-sref="info.team"><i class="fa fa-mortar-board"></i> Ons team</a></li>
-                                        <li><a ui-sref="info.management"><i class="fa fa-institution"></i> Schoolbestuur</a></li>
+                                        <li><a ui-sref="info.management"><i class="fa fa-institution"></i> Raad van bestuur</a></li>
+                                        <li><a ui-sref="info.schoolboard"><i class="fa fa-building"></i> Schoolraad</a></li>
                                     </ul>
                                 </div><!-- .box -->
 
@@ -97,7 +98,6 @@
                     <a href="javscript:void(0);"><i class="fa fa-group"></i> Ouderwerking</a>
                     <ul class="sub">
                         <li><a ui-sref="parents.pta">Ouderraad</a></li>
-                        <li><a ui-sref="parents.schoolboard">Schoolraad</a></li>
                         <li><a ui-sref="parents.read">Lees(groot)ouders</a></li>
                         <li><a ui-sref="parents.volunteers">Vrijwilligers</a></li>
                     </ul>

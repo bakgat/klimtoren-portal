@@ -38,18 +38,6 @@
                     },
                     title: 'Ouderraad'
                 }
-            },,
-            {
-                state: 'parents.schoolboard',
-                config: {
-                    url: '/schoolboard',
-                    views: {
-                        'content@parents': {
-                            templateUrl: 'js/modules/parents/schoolboard.html'
-                        }
-                    },
-                    title: 'Schoolraad'
-                }
             },
             {
                 state: 'parents.read',

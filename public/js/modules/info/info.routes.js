@@ -118,6 +118,31 @@
                     title: 'Inschrijven'
                 }
             }
+            ,
+            {
+                state: 'info.management',
+                config: {
+                    url: '/management',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/management.html'
+                        }
+                    },
+                    title: 'Raad van bestuur'
+                }
+            },
+            {
+                state: 'info.schoolboard',
+                config: {
+                    url: '/schoolboard',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/schoolboard.html'
+                        }
+                    },
+                    title: 'Schoolraad'
+                }
+            }
         ];
     };
 })();

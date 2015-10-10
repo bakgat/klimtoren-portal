@@ -37,6 +37,8 @@ class MailChimpController extends Controller
 
         if ($request->input('take')) {
             $params = array_merge($params, ['count' => $request->input('take')]);
+        } else {
+            $params = array_merge($params, ['count' => 100]);
         }
 
         $result = $MailChimp->get('campaigns', $params);

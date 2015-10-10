@@ -36,7 +36,7 @@
                 var result = [];
                 var i = 0;
                 angular.forEach(response.data.campaigns, function (campaign) {
-                    if (!campaign.recipients.segment_opts) {
+                    if (!campaign.recipients.segment_opts && campaign.settings.subject_line.toLowerCase().indexOf('nieuwsbrief') > -1) {
                         if (!take || i < take) {
                             result.push(campaign);
                             i++;
@@ -46,6 +46,7 @@
                 return result;
             }
         }
+
 
         function mailToSegments() {
             return $http.get('/api/mailchimp/campaigns'/*, {params: {take: take}} TAKE ALL NOW AS IT MUST BE FILTERED*/)

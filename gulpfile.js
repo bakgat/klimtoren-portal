@@ -64,7 +64,8 @@ gulp.task('bootstrap', function() {
 var sources = [
     'public/js/modules/notosportal.module.js',
     'public/js/modules/**/*module*.js',
-    'public/js/modules/**/*.js'
+    'public/js/modules/**/*.js',
+    'public/js/afterload.js'
 ];
 
 gulp.task('js', function () {
