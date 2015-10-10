@@ -30,7 +30,11 @@
 
 <script src="/js/plugins/revolution/jquery.themepunch.tools.min.js"></script>
 <script src="js/plugins/revolution/jquery.themepunch.revolution.min.js"></script>
-
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'nl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-20593426-1'}, 'google_translate_element');
+    }
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="/bower_components/gilbitron/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="/js/plugins/touchwipe/jquery.touchwipe.min.js"></script>
 

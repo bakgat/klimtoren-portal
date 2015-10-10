@@ -4,6 +4,7 @@
 <!-- Plugins CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 <link rel="stylesheet" href="css/jslider.css">
 <!-- Revolution Slider -->
 
@@ -38,3 +39,5 @@
 <link rel='stylesheet' href="css/ie/ie8.css">
 <link rel="stylesheet" href="rs-plugin/css/settings-ie8.css">
 <![endif]-->
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css">

@@ -103,6 +103,10 @@
                             <li><a ui-sref="info.campaigns">Nieuwsbrieven</a></li>
                         </ul>
                     </nav>
+                    <div class="title-block">
+                        <h3 class="title">Translate</h3>
+                    </div>
+                    <div id="google_translate_element"></div>
                 </aside>
             </div>
         </div>
