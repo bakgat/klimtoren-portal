@@ -84,6 +84,7 @@ function menu() {
         }
     });
 
+
     $(primary).find('.parent > a').click(function (e) {
         if (((body.width() + scrollWidth) > 991) && (isTouchDevice)) {
             var $this = $(this);
