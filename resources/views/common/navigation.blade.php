@@ -106,6 +106,8 @@
                 <li><a ui-sref="info.care"><i class="fa fa-heart"></i> Zorg</a></li>
 
                 <li><a ui-sref="info.register"><i class="fa fa-pencil"></i> Inschrijven</a></li>
+
+                <li><a ui-sref="spotlight.readout"><i class="fa fa-book"></i> Voorleesweek 2015</a></li>
             </ul>
         </nav>
     </div>
