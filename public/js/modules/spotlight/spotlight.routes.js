@@ -86,6 +86,18 @@
                     },
                     title: 'Leerplan media'
                 }
+            },
+            {
+                state: 'spotlight.readout',
+                config: {
+                    url: '/readout',
+                    views: {
+                        'content@spotlight': {
+                            templateUrl: 'js/modules/spotlight/readout.html'
+                        }
+                    },
+                    title: 'Voorleesweek 2015'
+                }
             }
         ];
     };
