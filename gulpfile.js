@@ -15,6 +15,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var notify = require('gulp-notify');
 
+var sloc = require('gulp-sloc');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -79,6 +80,24 @@ gulp.task('js', function () {
         .pipe(notify('Portal JS Compiled and Minified'));
 });
 
+
+var sloc_sources = [
+    /* NOTOSPLUS */
+    'app/**/*.*',
+    'config/**/*.*',
+    //'public/css/**/*.*',
+    'public/js/**/*.js',
+    'public/js/**/*.html',
+    'resources/**/*.*',
+    '.env*',
+    '.php',
+    '.js',
+    '.md'
+];
+gulp.task('sloc', function() {
+    gulp.src(sloc_sources)
+        .pipe(sloc());
+});
 
 
 gulp.task('watch', function() {
