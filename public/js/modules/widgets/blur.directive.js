@@ -32,7 +32,7 @@
                     if (attrs.image) {
                         img.src = attrs.image;
                     } else if (element.css('background-image') !== 'none') {
-                        console.log(element.css('background-image'));
+
                         img.src = element.css('background-image')
                             .replace('url("', '').replace('")', '');
                         element.css('background-image', 'none');
