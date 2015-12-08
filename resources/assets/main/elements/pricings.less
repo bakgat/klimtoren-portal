@@ -150,13 +150,14 @@
   info @info,
   success @success;
 
+
   .createpricingclasses(@iterator:1) when (@iterator <= length(@pricing-types)) {
     @class: extract(extract(@pricing-types, @iterator), 1);
     @color: extract(extract(@pricing-types, @iterator), 2);
 
     &.pricing-@{class} {
       &:before {
-        background: fade(@color, .06);
+        background: fade(@color, 6);
       }
       .title a {
         color: @color
@@ -167,12 +168,12 @@
       }
       .options li,
       .bottom-box {
-        border-color: fade(@color, .1);
-        color: fade(@color, .4);
+        border-color: fade(@color, 10);
+        color: fade(@color, 40);
       }
       .bottom-box {
-        border-top: 1px solid fade(@color, .1);
-        background: fade(@color, .05);
+        border-top: 1px solid fade(@color, 10);
+        background: fade(@color, 5);
       }
       .options li span,
       .bottom-box .more,
