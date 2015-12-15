@@ -32,7 +32,7 @@
 
 
                     <div class="entry-content">
-                        <dl class="dl-horizontal" data-ng-repeat="event in value">
+                        <dl class="dl-horizontal event-item" data-ng-repeat="event in value">
                             <dt>
                                 <span data-ng-bind="event.start | date:'HH.mmu'"></span>
                                 <span data-ng-if="event.end"> - {{event.end | date : 'HH.mmu'}}</span>
