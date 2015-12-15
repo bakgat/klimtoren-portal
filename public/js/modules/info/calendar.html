@@ -42,7 +42,7 @@
                                 <span data-ng-if="event.description" data-ng-bind="event.description"></span>
 
                                 <p data-ng-if="event.groups.length" class="small">Voor:
-                                        <span data-ng-repeat="group in event.groups">{{group.name}}
+                                        <span data-ng-repeat="group in event.groups">{{group.last_name}}
                                             <span class="separator" data-ng-if="!$last">, </span>
                                         </span>
                                 </p>
