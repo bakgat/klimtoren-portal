@@ -142,6 +142,18 @@
                     },
                     title: 'Schoolraad'
                 }
+            },
+            {
+                state: 'info.privacy',
+                config: {
+                    url: '/privacy',
+                    views: {
+                        'content@info': {
+                            templateUrl: 'js/modules/info/privacy.html'
+                        }
+                    },
+                    title: 'Privacybeleid'
+                }
             }
         ];
     };
