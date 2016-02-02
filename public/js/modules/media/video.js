@@ -13,6 +13,7 @@
     /* @ngInject */
     function Video($q) {
         var videos = [
+            {id: 'Upwfo3-7qbE', title: 'Chinouck en Nora presenteren onze school'},
             {id: 'hXPjArV6_rA', title: 'Saved by the bell 2015'},
             {id: '_k8Zw9rYmB4', title: 'Onze zorgvisie'},
             {id: 'OEqAylOlIho', title: 'De Klimtoren Wave'},
