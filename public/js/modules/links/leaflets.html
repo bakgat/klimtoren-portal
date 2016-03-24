@@ -12,5 +12,27 @@
             <p>Binnenkort vindt u hier een lijst met interessante folders rond kampen, sportverenigingen, ...</p>
             <br><hr><br>
         </div>
+
+        <div class="content portfolio portfolio4 col-sm-12 col-md-12">
+            <div class="row">
+                <!-- TODO(bakgat): filter - date-range picker -->
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row filter-elements">
+                <div class="col-xs-12 col-sm-4 col-md-3" data-ng-repeat="leaflet in vm.leaflets">
+                    <a data-ng-href="{{leaflet.url}}" target="_blank" class="work">
+                        <img class="replace-2x" data-ng-src="{{leaflet.thumb}}" width="370" height="270" alt="">
+                        <span class="shadow"></span>
+                        <div class="bg-hover"></div>
+                        <div class="work-title">
+                            <h3 class="title" data-ng-bind="leaflet.name"></h3>
+                            <div class="description" data-ng-bind="leaflet.description"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

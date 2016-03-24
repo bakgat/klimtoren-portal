@@ -34,7 +34,9 @@
                     url: '/leaflets',
                     views: {
                         'content@links': {
-                            templateUrl: 'js/modules/links/leaflets.html'
+                            templateUrl: 'js/modules/links/leaflets.html',
+                            controller: 'LeafletsController',
+                            controllerAs: 'vm'
                         }
                     },
                     title: 'Folders'

@@ -29,11 +29,12 @@
         }
 
         function getCalendarEvents() {
-            CalendarEvent.getList().then(calendarEventsComplete);
+            return CalendarEvent.getList().then(calendarEventsComplete);
 
             function calendarEventsComplete(data) {
                 //angular.copy($scope.data, $scope.testData);
                 vm.events = convertTo(data, 'start', true);
+                return vm.events;
             }
         };
 

@@ -74,7 +74,7 @@ gulp.task('js', function () {
         //.pipe(sourcemaps.init())
         .pipe(concat('app.min.js'))
         .pipe(ngAnnotate())
-        .pipe(uglify())
+        //.pipe(uglify())
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest('public/js'))
         .pipe(notify('Portal JS Compiled and Minified'));
