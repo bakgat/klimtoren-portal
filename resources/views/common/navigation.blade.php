@@ -30,7 +30,7 @@
                                 <div class="box closed">
                                     <h6 class="title">Onze school</h6>
                                     <ul>
-                                        <li><a href="content/documents/2015/schoolbrochure2015-2016.pdf" target="_blank"><i class="fa fa-download"></i> Schoolbrochure</a></li>
+                                        <li><a href="content/documents/2016/schoolbrochure2016-2017.pdf" target="_blank"><i class="fa fa-download"></i> Schoolbrochure</a></li>
                                         <li><a ui-sref="info.about"><i class="fa fa-question"></i> Onze visie</a></li>
                                         <li><a ui-sref="info.team"><i class="fa fa-mortar-board"></i> Ons team</a></li>
                                         <li><a ui-sref="info.management"><i class="fa fa-institution"></i> Raad van bestuur</a></li>
