@@ -105,6 +105,8 @@
 
                 <li><a ui-sref="info.care"><i class="fa fa-heart"></i> Zorg</a></li>
 
+                <li><a ui-sref="links.leaflets"><i class="fa fa-compass"></i> Naschools</a></li>
+
                 <li><a ui-sref="info.register"><i class="fa fa-pencil"></i> Inschrijven</a></li>
 
             </ul>

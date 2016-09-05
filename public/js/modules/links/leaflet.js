@@ -14,17 +14,12 @@
     function Leaflet($q) {
         var leaflets = [
             {
-                url: 'http://www.klimtoren.be',
-                thumb: '/content/img/bednet/logo.png',
-                name: 'Klimtoren',
-                description: 'test'
-            },
-            {
-                url: 'http://www.bednet.be',
-                thumb: '/content/img/bednet/date.png',
-                name: 'Bednet',
-                description: 'een andere'
-            },
+                url: '/content/documents/leaflets/balletschool-gistel-16-17.pdf',
+                thumb: '/content/img/leaflets/balletschool-gistel-16-17.png',
+                name: 'Gistelse balletschool',
+                description: 'brochure 2016-2017',
+                keywords: ['sport', 'dans']
+            }
         ]
         var service = {
             getList: getList
