@@ -21,7 +21,7 @@
                 keywords: ['sport', 'dans']
             },
             {
-                url: '/content/documents/leaflets/DP-2016-2017.pdf',
+                url: '/content/documents/leaflets/DP-2016-2017.jpg',
                 thumb: '/content/img/leaflets/DP-16-17.png',
                 name: 'Dansplatoo',
                 description: '(Fedes) brochure 2016-2017',
