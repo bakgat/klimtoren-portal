@@ -33,6 +33,13 @@
                 name: 'Danskant vzw',
                 description: 'aanbod 2016-2017',
                 keywords: ['sport', 'dans']
+            },
+            {
+                url: '/content/documents/leaflets/Folder G-sport.pdf',
+                thumb: '/content/img/leaflets/Folder G-sport.png',
+                name: 'Waterski',
+                description: 'voor G-sporters',
+                keywords: ['sport']
             }
         ]
         var service = {
