@@ -23,7 +23,7 @@
             <div class="clearfix"></div>
 
             <div class="row filter-elements">
-                <div class="col-xs-12 col-sm-4 col-md-3" data-ng-repeat="leaflet in vm.leaflets">
+                <div class="col-xs-12 col-sm-4 col-md-3" data-ng-repeat="leaflet in vm.leaflets | orderBy:'name'">
                     <a data-ng-href="{{leaflet.url}}" target="_blank" class="work">
                         <img class="replace-2x" data-ng-src="{{leaflet.thumb}}" width="370" height="270" alt="">
                         <span class="shadow"></span>

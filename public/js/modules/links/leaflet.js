@@ -19,6 +19,20 @@
                 name: 'Gistelse balletschool',
                 description: 'brochure 2016-2017',
                 keywords: ['sport', 'dans']
+            },
+            {
+                url: '/content/documents/leaflets/DP-16-17.pdf',
+                thumb: '/content/img/leaflets/DP-16-17.png',
+                name: 'Dansplatoo',
+                description: '(Fedes) brochure 2016-2017',
+                keywords: ['sport', 'dans']
+            },
+            {
+                url: 'http://www.danskant.be/index.html',
+                thumb: '/content/img/leaflets/rigajigjig-16-17.jpg',
+                name: 'Danskant vzw',
+                description: 'aanbod 2016-2017',
+                keywords: ['sport', 'dans']
             }
         ]
         var service = {
