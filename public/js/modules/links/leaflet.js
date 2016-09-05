@@ -35,8 +35,8 @@
                 keywords: ['sport', 'dans']
             },
             {
-                url: '/content/documents/leaflets/Folder G-sport.pdf',
-                thumb: '/content/img/leaflets/Folder G-sport.png',
+                url: '/content/documents/leaflets/Folder-G-sport.pdf',
+                thumb: '/content/img/leaflets/Folder-G-sport.png',
                 name: 'Waterski',
                 description: 'voor G-sporters',
                 keywords: ['sport']
