@@ -40,6 +40,27 @@
                 name: 'Waterski',
                 description: 'voor G-sporters',
                 keywords: ['sport']
+            },
+            {
+                url: '/content/documents/leaflets/DanzaDelArte-16-17.pdf',
+                thumb: '/content/img/leaflets/DanzaDelArte-16-1.png',
+                name: 'Danza dell\' Arté',
+                description: 'Balletschool Brugge',
+                keywords: ['sport', 'dans']
+            },
+            {
+                url: '/content/documents/leaflets/krachtbal-16-17.jpg',
+                thumb: '/content/img/leaflets/krachtbal-16-1.png',
+                name: 'Krachtbal',
+                description: 'KRB Jabbeke',
+                keywords: ['sport']
+            },
+            {
+                url: '/content/documents/leaflets/varya-16-17.pdf',
+                thumb: '/content/img/leaflets/varya-16-1.png',
+                name: 'Varya',
+                description: 'Varsenare',
+                keywords: ['sport', 'dans']
             }
         ]
         var service = {
