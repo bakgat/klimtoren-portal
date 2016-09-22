@@ -15,6 +15,9 @@ $namespace = 'Portal\\Http\\Controllers\\';
 Route::get('/', function() {
     return view('index');
 });
+Route::get('/zorgavond', function() {
+   return redirect('/#/zorgavond');
+});
 
 Route::group(['prefix'=>'/views'], function() {
     Route::group(['prefix'=>'/common'], function() {

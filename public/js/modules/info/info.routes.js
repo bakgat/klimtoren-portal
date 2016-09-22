@@ -5,7 +5,7 @@
     'use strict';
 
     angular
-        .module('notosportal.info')
+        .module('notosportal.register')
         .run(configRoutes);
 
     /* @ngInject */
@@ -16,143 +16,15 @@
     function getStates() {
         return [
             {
-                state: 'info',
+                state: 'careinfo',
                 config: {
-                    abstract: true,
-                    url: '/info',
+                    url: '/zorgavond',
                     views: {
                         'main@': {
-                            templateUrl: 'js/modules/layout/main.html'
+                            templateUrl: 'js/modules/register/zorgavond.html'
                         }
                     },
-                    title: 'Info'
-                }
-            },
-            {
-                state: 'info.contact',
-                config: {
-                    url: '/contact',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/contact.html'
-                        }
-                    },
-                    title: 'Contact'
-                }
-            },
-            {
-                state: 'info.about',
-                config: {
-                    url: '/about',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/about.html'
-                        }
-                    },
-                    title: 'Over onze school'
-                }
-            },
-            {
-                state: 'info.care',
-                config: {
-                    url: '/care',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/care.html'
-                        }
-                    },
-                    title: 'Zorg op onze school'
-                }
-            },
-            {
-                state: 'info.team',
-                config: {
-                    url: '/team',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/team.html'
-                        }
-                    },
-                    title: 'Ons team'
-                }
-            },
-            {
-                state: 'info.calendar',
-                config: {
-                    url: '/calendar',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/calendar.html',
-                            controller: 'CalendarController',
-                            controllerAs: 'vm'
-                        }
-                    },
-                    title: 'Kalender'
-                }
-            },
-            {
-                state: 'info.campaigns',
-                config: {
-                    url: '/campaigns',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/campaigns.html',
-                            controller: 'CampaignsController',
-                            controllerAs: 'vm'
-                        }
-                    },
-                    title: 'Nieuwsbrieven'
-                }
-            },
-            {
-                state: 'info.register',
-                config: {
-                    url: '/register',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/register.html',
-                            controller: 'RegisterController',
-                            controllerAs: 'vm'
-                        }
-                    },
-                    title: 'Inschrijven'
-                }
-            }
-            ,
-            {
-                state: 'info.management',
-                config: {
-                    url: '/management',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/management.html'
-                        }
-                    },
-                    title: 'Raad van bestuur'
-                }
-            },
-            {
-                state: 'info.schoolboard',
-                config: {
-                    url: '/schoolboard',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/schoolboard.html'
-                        }
-                    },
-                    title: 'Schoolraad'
-                }
-            },
-            {
-                state: 'info.privacy',
-                config: {
-                    url: '/privacy',
-                    views: {
-                        'content@info': {
-                            templateUrl: 'js/modules/info/privacy.html'
-                        }
-                    },
-                    title: 'Privacybeleid'
+                    title: 'Zorgavond'
                 }
             }
         ];

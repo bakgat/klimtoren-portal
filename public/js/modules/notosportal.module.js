@@ -18,6 +18,7 @@
             'notosportal.health',
             'notosportal.meals',
             'notosportal.spotlight',
-            'notosportal.parents'
+            'notosportal.parents',
+            'notosportal.register',
         ]);
 })();
