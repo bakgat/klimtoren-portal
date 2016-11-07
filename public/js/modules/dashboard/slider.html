@@ -1,37 +1,47 @@
-<style>
-    .tparrows {
-        display: none;
-    }
+<div class="rs-slider slider load">
+    <div class="tp-banner-container">
+        <div class="tp-banner" rs-slider>
+            <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-delay="8000">
+                    <!-- MAIN IMAGE -->
+                    <img src="/content/img/teasers/team2015-2-hd.jpg"
+                         alt="het Klimtorenteam"
+                         data-kenburns="on"
+                         data-bgposition="center bottom"
+                         data-bgpositionend="center top"
+                         data-bgfit="100"
+                         data-bgfitend="100"
+                         data-duration="8000"
+                         data-ease="Sine.easeOut">
+                    <!-- LAYERS -->
 
-    .tp-caption {
-        text-shadow: 2px 1px 2px rgba(0, 0, 0, .5) !important;
-    }
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption fade tp-resizeme medium_bg_asbestos"
+                         data-x="center" data-y="bottom" data-voffset="-90" data-speed="1000" data-start="900" data-end="3000"
+                         data-easing="Expo.easeOut">vbs de klimtoren
+                    </div>
 
-    .care-container {
-        position: relative;
-        margin: 10px auto;
-        width: 90%;
-        border: solid 2px rgba(0, 0, 0, .54);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
-        text-align: center;
-    }
-    .care-container > img {
-        width: 100%;
-        margin-top: 5px;
-    }
-    .care-container > a.more {
-        text-decoration: none;
-        padding: 5px;
-        font-size: 1.5rem;
-        border-radius: 3px;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, .84);
-        color: #fff;
-        background-color: #f39200;
-    }
-</style>
 
-<div class="care-container">
-    <a href="/zorgavond" class="more">Schrijf je nu in! <span class="fa fa-angle-right"></span></a>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption fade tp-resizeme medium_bg_asbestos"
+                         data-x="center" data-y="bottom" data-voffset="-90" data-speed="1000" data-start="2900" data-end="6000"
+                         data-easing="Expo.easeOut">één team
+                    </div>
 
-    <img src="/content/img/teasers/zorgavond-2016.jpg" alt="info-avond zorg" >
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption sfb tp-resizeme light_heavy_70_shadowed"
+                         data-x="center" data-y="bottom" data-voffset="-30" data-speed="700" data-start="2500"
+                         data-end="7500"
+                         data-easing="easeOutBack">
+                        <a ui-sref="info.team" class="tp-btn tp-large-button-yellow">
+                            <i class="pe-7s-right-arrow"></i> Meer weten
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 </div>
+
+<!-- .rs-slider -->
