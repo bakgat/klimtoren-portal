@@ -66,11 +66,8 @@
                                 <div class="box closed">
                                     <h6 class="title">In de kijker</h6>
                                     <ul>
-                                        <li><a><li><a ui-sref="spotlight.pimp"><i class="fa fa-paint-brush"></i> Pimp de school</a></li></a></li>
                                         <li><a><li><a ui-sref="spotlight.kiva"><i class="fa fa-gratipay"></i> KiVa</a></li></a></li>
-                                        <li><a><li><a ui-sref="spotlight.diff"><i class="fa fa-check-square-o"></i> Contractwerk in de kleuterschool</a></li></a></li>
-                                        <li><a><li><a ui-sref="spotlight.lang"><i class="fa fa-language"></i> Nieuwe taalmethode</a></li></a></li>
-                                        <li><a><li><a ui-sref="spotlight.media"><i class="fa fa-video-camera"></i> Leerplan media</a></li></a></li>
+                                        <li><a><li><a ui-sref="spotlight.stem"><i class="fa fa-gears"></i> STEM</a></li></a></li>
                                     </ul>
                                 </div><!-- .box -->
 
@@ -87,7 +84,7 @@
 
                             <div class="promo-block text-right ">
                                 <a href="#">
-                                    <img class="replace-2x" src="content/img/navigation/promo_block_2.png" width="300" height="424" alt="">
+                                    <img class="replace-2x" src="content/img/navigation/promo_block_3.png" width="300" height="424" alt="">
                                 </a>
                             </div><!-- .promo-block -->
                         </li>

@@ -28,15 +28,15 @@
                 }
             },
             {
-                state: 'spotlight.pimp',
+                state: 'spotlight.stem',
                 config: {
-                    url: '/pimp',
+                    url: '/stem',
                     views: {
                         'content@spotlight': {
-                            templateUrl: 'js/modules/spotlight/pimp.html'
+                            templateUrl: 'js/modules/spotlight/stem.html'
                         }
                     },
-                    title: 'Pimp je school'
+                    title: 'STEM'
                 }
             },
             {
