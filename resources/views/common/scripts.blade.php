@@ -58,6 +58,6 @@
 <!-- end inject vendor:scripts -->
 
 <!-- inject app:scripts -->
-<script src="/js/app.min.js"></script>
+<script src="/js/app.min.js?v=201701311512"></script>
 <!--<script src="/js/afterload.js"></script>-->
 <!-- end inject app:scripts -->
