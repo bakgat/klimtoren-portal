@@ -1,8 +1,11 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.8.8",
+    "gulp": "^3.9.1",
+    "gulp-ng-annotate": "^2.0.0",
     "gulp-sloc": "^1.0.4",
+    "gulp-watch": "^4.3.11",
+    "gulp-watch-less": "^1.0.1",
     "laravel-elixir": "^1.0.0"
   }
 }
